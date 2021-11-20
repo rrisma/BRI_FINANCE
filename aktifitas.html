@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Aktifitas - BRI Finance</title>
+    <base href="">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="BRI Finance Layanan Finansial Terdepan">
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <meta property="og:title" content="BRI Finance Layanan Finansial Terdepan">
+    <meta property="og:description" content="BRI Finance Layanan Finansial Terdepan">
+    <meta property="og:image" content="assets/img/logo.png">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="assets/img/logo.png">
+    <meta property="og:site_name" content="BRI Finance Layanan Finansial Terdepan">
+    <meta name="twitter:image:alt" content="BRI Finance Layanan Finansial Terdepan">
+    <meta property="fb:app_id" content="BRI Finance Layanan Finansial Terdepan" />
+    <meta name="twitter:site" content="">
+    
+    <!--begin::Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <!--end::Fonts-->
+    
+    <!--begin::Global Theme Styles(used by all pages)-->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/preloaders.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/jquery.steps.css" rel="stylesheet" type="text/css" />
+    
+    <link href="assets/css/pages/wizard/wizard-2.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/lightgallery.min.css" /> -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/css/lightgallery.min.css" />
+    <link rel="shortcut icon" href="assets/img/logo.png" />
+    
+    <script>
+        var KTAppSettings = {
+            "breakpoints": {
+                "sm": 576,
+                "md": 768,
+                "lg": 992,
+                "xl": 1200,
+                "xxl": 1200
+            },
+            "colors": {
+                "theme": {
+                    "base": {
+                        "white": "#ffffff",
+                        "primary": "#6993FF",
+                        "secondary": "#E5EAEE",
+                        "success": "#1BC5BD",
+                        "info": "#8950FC",
+                        "warning": "#FFA800",
+                        "danger": "#6a080d",
+                        "light": "#F3F6F9",
+                        "dark": "#212121"
+                    },
+                    "light": {
+                        "white": "#ffffff",
+                        "primary": "#E1E9FF",
+                        "secondary": "#ECF0F3",
+                        "success": "#C9F7F5",
+                        "info": "#EEE5FF",
+                        "warning": "#FFF4DE",
+                        "danger": "#FFE2E5",
+                        "light": "#F3F6F9",
+                        "dark": "#D6D6E0"
+                    },
+                    "inverse": {
+                        "white": "#ffffff",
+                        "primary": "#ffffff",
+                        "secondary": "#212121",
+                        "success": "#ffffff",
+                        "info": "#ffffff",
+                        "warning": "#ffffff",
+                        "danger": "#ffffff",
+                        "light": "#464E5F",
+                        "dark": "#ffffff"
+                    }
+                },
+                "gray": {
+                    "gray-100": "#F3F6F9",
+                    "gray-200": "#ECF0F3",
+                    "gray-300": "#E5EAEE",
+                    "gray-400": "#D6D6E0",
+                    "gray-500": "#B5B5C3",
+                    "gray-600": "#80808F",
+                    "gray-700": "#464E5F",
+                    "gray-800": "#1B283F",
+                    "gray-900": "#212121"
+                }
+            },
+            "font-family": "Poppins"
+        };
+    </script>
+    <!--end::Global Config-->
+    <!--begin::Global Theme Bundle(used by all pages)-->
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+    <script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+    <script src="assets/js/scripts.bundle.js"></script>
+    <!--end::Global Theme Bundle-->
+    <!--begin::Page Scripts(used by this page)-->
+    <script src="assets/js/bootbox.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/inview.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/lightgallery.min.js"></script>
+    <script src="assets/js/lg-thumbnail.min.js"></script>
+
+
+
+    <style>
+        .html {
+            height: 100%;
+            width: 100%;
+        }
+    
+        .body {
+            height: 100%;
+            width: 100%;
+        }
+    
+        .button-ajukan {
+            background-size: contain;
+            /* height: 100%; */
+            /* width: 300px; */
+            padding: 0px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./assets/img/button-bg.svg');
+            position: absolute;
+            top: -25px;
+            left: 43%;
+        }
+
+        .button-hitung {
+            background-size: contain;
+            padding: 0px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./assets/img/button-bg.svg');
+            position: absolute;
+            left: 50%;transform: translate(-50%, 0);
+            bottom: 50px;
+            /* top: -25px;
+            left: 43%; */
+        }
+
+        .button-selengkapnya {
+            background-size: contain;
+            padding: 0px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./assets/img/button-bg.svg');
+            position: absolute;
+            left: 50%;transform: translate(-50%, 0);
+            bottom:-65px;
+            /* top: -25px;
+            left: 43%; */
+        }
+
+        .promo-button {
+            background-size: contain;
+            padding: 0px;
+            z-index: 9999;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./assets/img/promo-btn.svg');
+            position: absolute;
+            bottom: 0;
+            left: 50%;transform: translate(-50%, 70px);
+        }
+    
+        .headright-bg {
+            background-size: contain;
+            width: 30%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./assets/img/headright-bg.svg');
+            position: absolute;
+            top: 0px;
+            right: 0;
+        }
+    
+        .btn-ig {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./assets/img/button-sosmed.svg');
+            position: absolute;
+            bottom: -200px;
+            right: 0px;
+            cursor: pointer;
+        }
+    
+        .btn-fb {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./assets/img/button-sosmed.svg');
+            position: absolute;
+            bottom: -250px;
+            right: 0px;
+            cursor: pointer;
+        }
+    
+        .btn-tw {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./assets/img/button-sosmed.svg');
+            position: absolute;
+            bottom: -300px;
+            right: 0px;
+            cursor: pointer;
+
+        }
+
+        .btn-sr {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./assets/img/search.png');
+            position: absolute;
+            top: 200px;
+            right: 0px;
+            cursor: pointer;
+        }
+    
+        #beranda {
+            width: 100%;
+            min-height: 83vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .info {
+            width: 100%;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .berita {
+            width: 100%;
+            background-color: #1E5396;
+            position: relative;
+        }
+
+        .cp {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./assets/img/cp-bg.svg');
+        }
+
+        .ornamen-bottom2 {
+            padding: 120px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(./assets/img/ornamen-bottom2.svg);
+            position: absolute;
+            bottom: -30px;
+            right: -20px;
+        }
+        .swiper-slide1 {
+            width:100%;
+            padding-right: 10px;
+            padding-left: 10px;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .promo-card {
+            width: 100%;
+            position: relative;
+        }
+
+        .berita-card {
+            width: 100%;
+            position: relative;
+        }
+
+        .swiper-button-next8:after, .swiper-container-rtl .swiper-button-prev8:after {
+            content: 'next';
+            color: #e07c30;
+        }
+
+        .swiper-button-prev8:after, .swiper-container-rtl .swiper-button-next8:after {
+            content: 'prev';
+            color: #e07c30;
+        }
+
+        .swiper-button-next6:after, .swiper-container-rtl .swiper-button-prev6:after {
+            content: 'next';
+            color: grey;
+        }
+
+        .swiper-button-prev6:after, .swiper-container-rtl .swiper-button-next6:after {
+            content: 'prev';
+            color: grey;
+        }
+
+        .swiper-button-next7:after, .swiper-container-rtl .swiper-button-prev7:after {
+            content: 'next';
+            color: white;
+        }
+
+        .swiper-button-prev7:after, .swiper-container-rtl .swiper-button-next7:after {
+            content: 'prev';
+            color: white;
+        }
+
+        .nav-custom {
+            color: #00539b;
+            font-size: 12pt;
+        }
+
+        #kt_demo_panel_toggle:hover{
+            cursor: pointer;
+            transform: translateY(-4px);
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-custom:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+            color: #F26F21;
+        }
+
+        .side-text{
+            cursor: pointer;
+            color:#fff;font-size: 14pt;
+        }
+
+        .side-text:hover{
+            cursor: pointer;
+            color:#F26F21;font-size: 14pt;
+        }
+
+        /* Custom, iPhone Retina */ 
+        /* @media only screen and (min-width : 320px) {
+            
+        } */
+
+        /* Extra Small Devices, Phones */ 
+        /* @media only screen and (min-width : 480px) {
+
+        } */
+
+        /* Small Devices, Tablets */
+        /* @media only screen and (min-width : 768px) {
+
+        } */
+
+        /* Medium Devices, Desktops */
+        /* @media only screen and (min-width : 992px) {
+            .simulasi-pembiayaan {
+                position: absolute;top:70px;left: 180px;z-index: 9;
+            }
+        } */
+
+        /* Large Devices, Wide Screens */
+        /* @media only screen and (min-width : 1200px) {
+            .simulasi-pembiayaan {
+                position: absolute;top:15px;left: 300px;z-index: 9;
+            }
+        } */
+
+        /* @media only screen and (min-width:992px)  {  */
+            /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+            /* .simulasi-pembiayaan {
+                position: absolute;top:150px;left: 180px;z-index: 9;
+            }
+        } */
+
+        /* @media only screen and (min-width:1270px) {  */
+            /* big landscape tablets, laptops, and desktops */ 
+            
+        /* } */
+
+        /* @media only screen and (min-width:1280px) {  */
+            /* big landscape tablets, laptops, and desktops */ 
+           
+        /* } */
+
+        /* @media (min-width: 1281px) {
+            .simulasi-pembiayaan {
+                position: absolute;top:0px;left: 0px;z-index: 9;
+            }
+        
+        }*/
+
+        /* @media (min-width: 1025px) and (max-width: 1280px) {
+            .simulasi-pembiayaan {
+                position: absolute;top:0px;left: 300px;z-index: 9;
+            }
+        }  */
+
+
+        .simulas-btn-1:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .simulas-btn-2:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .simulas-btn-3:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .simulas-btn-4:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .produk-item-1:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .produk-item-2:hover {
+            cursor: pointer;
+        }
+
+        .produk-item-3:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .produk-item-4:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .produk-item-5:hover {
+            cursor: pointer;
+        }
+
+        .produk-item-6:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .produk-item-7:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .produk-item-8:hover {
+            cursor: pointer;
+        }
+
+        .produk-item-9:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .button-hitung:hover {
+            cursor: pointer;
+        }
+
+        .button-selengkapnya:hover {
+            cursor: pointer;
+        }
+
+        .promo-button:hover {
+            cursor: pointer;
+        }
+        
+
+        .t-blue {
+            color:#00529b;
+        }
+
+        /* 1536 125% */
+        @media (min-width:1281px) { 
+            #beranda {
+                min-height: 85vh;
+            }
+
+
+            .simulas-btn-1 {
+                position: absolute;top:40px;left: 20.5%;z-index: 9;
+            }
+
+            .simulas-btn-2 {
+                position: absolute;top:40px;left: 37%;z-index: 9;
+            }
+
+            .simulas-btn-3 {
+                position: absolute;top:40px;right: 36.5%;z-index: 9;
+            }
+
+            .simulas-btn-4 {
+                position: absolute;top:50px;right: 21%;z-index: 9;
+            }
+
+            .margin-box {
+                position: relative;margin-top:100px;
+            }
+
+            .simulasi-box{
+                padding-top: 3rem;
+                position:relative;width: 100%;overflow: hidden;
+            }
+
+            .produk-item-1 {
+                position: absolute;top:30px;left: 23.5%;z-index: 9;
+            }
+
+            .produk-item-2 {
+                position: absolute;top:30px;left: 50%;transform: translate(-50%, 0);z-index: 9;
+            }
+
+            .produk-item-3 {
+                position: absolute;top:30px;right: 25%;z-index: 9;
+            }
+
+            .produk-item-4 {
+                position: absolute;top:100px;left: 24.5%;z-index: 9;
+            }
+
+            .produk-item-5 {
+                position: absolute;top:100px;left: 50%;transform: translate(-50%, 0);z-index: 9;
+            }
+
+            .produk-item-6 {
+                position: absolute;top:100px;right: 25%;z-index: 9;
+            }
+
+            .produk-item-7 {
+                position: absolute;top:60px;left: 23%;z-index: 9;
+            }
+
+            .produk-item-8 {
+                position: absolute;top:60px;left: 50%;transform: translate(-50%, 0);z-index: 9;
+            }
+
+            .produk-item-9 {
+                position: absolute;top:60px;right: 22.5%;z-index: 9;
+            }
+
+            .pembiayaan-content{
+                position: relative;margin-top: 77px;
+            }
+
+            .pembiayaan-container {
+                margin-left: 137px;margin-right: 137px;
+            }
+
+            .pembiayaan-blue {
+                min-height: 450px;width: 550px;background-image: url('./assets/img/ornamen-simulasi7.svg');background-size: contain;background-position: top center;background-repeat: no-repeat;
+            }
+
+            .button-selengkapnya {
+                    left: 45%;
+                    transform: translate(-50%, 0);
+                    bottom: 15px;
+            }
+
+            .pembiayaan-ornamen{
+                position: absolute;left: 70%;top:40px;
+            }
+
+            .pembiayaan-ornamen2{
+                position: absolute;
+                left: -90px;
+                top: 80px;
+            }
+        }
+
+        /* 1745 110% */
+        @media only screen and (min-width:1745px){ 
+            #beranda {
+                min-height: 83vh;
+            }
+
+            .simulas-btn-1 {
+                position: absolute;top: 50px;left: 20.8%;z-index: 9;
+            }
+
+            .simulas-btn-2 {
+                position: absolute;top:50px;left: 37.5%;z-index: 9;
+            }
+
+            .simulas-btn-3 {
+                position: absolute;top:50px;right: 37.5%;z-index: 9;
+            }
+
+            .simulas-btn-4 {
+                position: absolute;top:60px;right: 21.6%;z-index: 9;
+            }
+
+            .margin-box {
+                position: relative;margin-top:100px;
+            }
+
+            .simulasi-box-container {
+                margin-left: 150px;margin-right: 150px;
+            }
+
+            .simulasi-box{
+                padding-top: 5rem;
+                position:relative;width: 100%;overflow: hidden;
+            }
+
+            .produk-item-1 {
+                position: absolute;top: 35px;left: 24%;z-index: 9;
+            }
+
+            .produk-item-2 {
+                position: absolute;top:35px;left: 50%;transform: translate(-50%, 0);z-index: 9;
+            }
+
+            .produk-item-3 {
+                position: absolute;top:35px;right: 25.5%;z-index: 9;
+            }
+
+            .produk-item-4 {
+                position: absolute;top: 115px;left: 25.5%;z-index: 9;
+            }
+
+            .produk-item-5 {
+                position: absolute;top:115px;left: 49.8%;transform: translate(-50%, 0);z-index: 9;
+            }
+
+            .produk-item-6 {
+                position: absolute;top:115px;right: 25.5%;z-index: 9;
+            }
+
+            .produk-item-7 {
+                position: absolute;top: 90px;left: 25%;z-index: 9;
+            }
+
+            .produk-item-8 {
+                position: absolute;top:90px;left: 50%;transform: translate(-50%, 0);z-index: 9;
+            }
+
+            .produk-item-9 {
+                position: absolute;top:90px;right: 23%;z-index: 9;
+            }
+
+            .pembiayaan-content{
+                position: relative;margin-top: 115px;
+            }
+
+            .pembiayaan-container {
+                margin-left: 156px;margin-right: 156px;
+            }
+
+            .pembiayaan-blue {
+                min-height: 450px;width: 630px;background-image: url('./assets/img/ornamen-simulasi7.svg');background-size: contain;background-position: top center;background-repeat: no-repeat;
+            }
+
+            .button-selengkapnya {
+                bottom: -40px;
+                left: 55%;
+                transform: translate(-50%, 0);
+            }
+
+            .pembiayaan-ornamen{
+                position: absolute;left: 90%;top:65px;
+            }
+
+            .pembiayaan-ornamen2{
+                position: absolute;left: -90px;top:125px;
+            }
+        }
+
+        /* 1920 100% */
+        @media only screen and (min-width:1920px){ 
+            #beranda {
+                min-height: 82vh;
+            }
+
+            .simulas-btn-1 {
+                position: absolute;top: 60px;left: 21.3%;z-index: 9;
+            }
+
+            .simulas-btn-2 {
+                position: absolute;top:60px;left: 38%;z-index: 9;
+            }
+
+            .simulas-btn-3 {
+                position: absolute;top:60px;right: 37.7%;z-index: 9;
+            }
+
+            .simulas-btn-4 {
+                position: absolute;top:70px;right: 21.8%;z-index: 9;
+            }
+
+            .margin-box {
+                position: relative;margin-top:130px;
+            }
+
+            .simulasi-box-container {
+                margin-left: 200px;margin-right: 200px;
+            }
+
+            .simulasi-box{
+                padding-top: 5rem;
+                position:relative;width: 100%;overflow: hidden;
+            }
+
+            .produk-item-1 {
+                position: absolute;top:40px;left: 24.5%;z-index: 9;
+            }
+
+            .produk-item-2 {
+                position: absolute;top:40px;left: 50%;transform: translate(-50%, 0);z-index: 9;
+            }
+
+            .produk-item-3 {
+                position: absolute;top:40px;right: 25.7%;z-index: 9;
+            }
+
+            .produk-item-4 {
+                position: absolute;top: 135px;left: 25.5%;z-index: 9;
+            }
+
+            .produk-item-5 {
+                position: absolute;top:135px;left: 49.8%;transform: translate(-50%, 0);z-index: 9;
+            }
+
+            .produk-item-6 {
+                position: absolute;top:135px;right: 25.8%;z-index: 9;
+            }
+
+            .produk-item-7 {
+                position: absolute;top: 100px;left: 25.5%;z-index: 9;
+            }
+
+            .produk-item-8 {
+                position: absolute;top:100px;left: 50%;transform: translate(-50%, 0);z-index: 9;
+            }
+
+            .produk-item-9 {
+                position: absolute;top:100px;right: 24%;z-index: 9;
+            }
+
+            .pembiayaan-content{
+                position: relative;margin-top: 145px;
+            }
+
+            .pembiayaan-container {
+                margin-left: 176px;margin-right: 176px;
+            }
+
+            .pembiayaan-blue {
+                min-height: 450px;width: 697px;background-image: url('./assets/img/ornamen-simulasi7.svg');background-size: contain;background-position: top center;background-repeat: no-repeat;
+            }
+
+            .button-selengkapnya {
+                bottom: -70px;
+                left: 55%;
+                transform: translate(-50%, 0);
+            }
+
+            .pembiayaan-ornamen{
+                position: absolute;left: 100%;top:65px;
+            }
+
+            .pembiayaan-ornamen2{
+                position: absolute;left: -90px;top:125px;
+            }
+        }
+        
+    </style>
+<head>
+
+</head>
+
+<body id="kt_body" style="background:white;"
+    class="quick-panel-right demo-panel-right offcanvas-right header-fixed subheader-enabled page-loading">
+    <div class="preloader">
+        <div class="loading">
+            <img src="assets/img/icon.png" width="200">
+        </div>
+    </div>
+    <ul class="sticky-toolbar nav flex-column pl-2 pr-2 pt-3 pb-3 mt-4" style="background: transparent;">
+        <!--begin::Item-->
+        <li class="nav-item mb-2">
+            <div class="btn-ig p-10 " style="z-index:9;">
+                <i class="icon-lg la text-white mt-3 socicon-instagram"></i>
+            </div>
+        </li>
+        <li class="nav-item mb-2">
+            <div class="btn-fb p-10" style="z-index:9;">
+                <i class="icon-lg la text-white mt-3 socicon-facebook"></i>
+            </div>
+        </li>
+        <li class="nav-item mb-2">
+            <div class="btn-tw p-10" style="z-index:9;">
+                <i class="icon-lg la text-white mt-3 socicon-twitter"></i>
+            </div>
+        </li>
+        <!--end::Item-->
+    </ul>
+    <div id="kt_header" class="header header-sticky" style="background-color: transparent;">
+        <div class="container-fluid p-0" style="background-color: transparent;position: relative;">
+            <div class="con-head">
+                <img style="position:absolute;top:-20px;" src="assets/img/head-bg.svg" width="100%" />
+                <img style="position:absolute;top:-20px;" src="assets/img/head.svg" width="500" />
+                <img style="position:absolute;top:35px;left:120px;" src="assets/img/icon.png" width="150" />
+                <img style="position:absolute;top:-20px;" src="assets/img/menu-bg.svg" width="100" />
+                <a style="position:absolute;top:50px;left:40px;" id="kt_demo_panel_toggle" data-toggle="tooltip" title=""
+                    data-placement="right" data-original-title="Menu"><i
+                        class="icon-xxl fas text-white fa-align-justify"></i></a>
+                <a class="button-ajukan" href="pengajuan_kredit.html" style="cursor: pointer;">
+                    <p class="text-white font-weight-boldest mb-0 p-20">AJUKAN PEMBIAYAAN</p>
+                </a>
+                <div class="headright-bg">
+                    <div class="container" style="position:relative;padding:40px;">
+                        <div class="d-flex" style="height:100%;position:absolute;width:100%;top:30px;">
+                            <div style="width:100%;justify-content: center;">
+                                <div class="input-icon input-icon-right">
+                                    <input type="text" class="form-control form-control-sm"
+                                        style="height:20px;background-color: transparent;" placeholder="">
+                                    <span>
+                                        <i class="flaticon2-search-1 icon-sm text-white"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex" style="width:100%;justify-content: center;">
+                                <p class="mb-0 text-white" style="cursor: pointer;">ID</p>
+                                <p class="mb-0 text-white ml-3 mr-3">|</p>
+                                <p class="mb-0 text-white" style="cursor: pointer;">EN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="position: absolute;top:150px;left:35px;" class="side-custom">
+                <img style="position: absolute;top:-70px;left:-80px;" width="500" src="./assets/img/side.png">
+                <a style="position: absolute;top:120px;left: 40px;z-index: 9;width:200px" href="index.html">
+                    <p class="font-weight-boldest text-left mb-0 pl-20 side-text">BERANDA</p>
+                </a>
+                <a style="position: absolute;top:190px;left: 40px;z-index: 9;width:300px" href="about_manajemen.html">
+                    <p class="font-weight-boldest text-left mb-0 pl-20 side-text">TENTANG KAMI</p>
+                </a>
+                <a style="position: absolute;top:260px;left: 40px;z-index: 9;width:300px" href="aktifitas.html">
+                    <p class="font-weight-boldest text-left mb-0 pl-20 side-text">MEDIA</p>
+                </a>
+                <a style="position: absolute;top:325px;left: 40px;z-index: 9;width:300px" href="persyaratan_konsumer.html">
+                    <p class="font-weight-boldest text-left mb-0 pl-20 side-text">PRODUK & LAYANAN</p>
+                </a>
+                <a style="position: absolute;top:395px;left: 40px;z-index: 9;width:300px" href="promo.html">
+                    <p class="font-weight-boldest text-left mb-0 pl-20 side-text">PROMO</p>
+                </a>
+                <a style="position: absolute;top:465px;left: 40px;z-index: 9;width:300px" href="pengajuan_kredit.html">
+                    <p class="font-weight-boldest text-left mb-0 pl-20 side-text">AJUKAN PEMBIAYAAN</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-column flex-root">
+        <div class="d-flex flex-row flex-column-fluid page">
+            <div class="d-flex flex-column flex-row-fluid wrapper pt-0" id="kt_wrapper">
+                <div class="content pb-0 d-flex flex-column flex-column-fluid pt-0" id="kt_content">
+                    <section id="beranda">
+                        <div class="container-fluid pt-30" style="width: 100%;position:relative;z-index:1;display:flex;justify-content:center;align-items: center;">
+                            <img src="./assets/img/bg-promo.svg" style="width: 100%;height: 100%;">
+                            <h1 style="position: absolute;color: white;font-size: 30pt;" class="font-weight-bolder">AKTIFITAS</h1>
+                        </div>
+                        <img style="position:absolute;bottom:0px;" src="assets/img/ornamen-bottom.svg" width="100%" />
+                        <img style="position:absolute;top:0px;left:0px;" src="assets/img/ornamen-home.svg" width="150" />
+                        <img style="position:absolute;top:0px;left:300px;" src="assets/img/ornamen-top.svg" width="400" />                            
+                    </section>
+                    <section id="simulasi3" style="background-color: #FFFFFF;position: relative;">
+                        <div style="position:absolute;top:0px;right: 0;">
+                            <img src="assets/img/ornamen-simulasi8.svg" width="400" />
+                        </div>
+                        <div style="position:absolute;top:0px;left: 0;">
+                            <img src="assets/img/ornamen-simulasi1.svg" width="700" />
+                        </div>
+                        <div style="position:absolute;top:0px;right: 0;">
+                            <img src="assets/img/ornamen-simulasi2.svg" width="700" />
+                        </div>
+                        <div style="position:absolute;bottom:0px;right: 0;">
+                            <img src="assets/img/ornamen-simulasi6.svg" width="800" />
+                        </div>
+                        <div style="position:absolute;top:0px;z-index: 9;">
+                            <img src="assets/img/aktifitas-top.svg" width="100%" />
+                        </div>
+                        <div class="pb-40" style="position:relative;width: 100%;padding-top:150px;">
+                            <div class="pt-30 pb-20" style="position:relative;width: 100%;overflow: hidden;">
+                                <div class="container outing">
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup" style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt1.png">
+                                                <img src="./assets/img/akt1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt2.png">
+                                                <img src="./assets/img/akt2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt3.png">
+                                                <img src="./assets/img/akt3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt4.png">
+                                                <img src="./assets/img/akt4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt1.png">
+                                                <img src="./assets/img/akt1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt2.png">
+                                                <img src="./assets/img/akt2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt3.png">
+                                                <img src="./assets/img/akt3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt4.png">
+                                                <img src="./assets/img/akt4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt1.png">
+                                                <img src="./assets/img/akt1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt2.png">
+                                                <img src="./assets/img/akt2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt3.png">
+                                                <img src="./assets/img/akt3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt4.png">
+                                                <img src="./assets/img/akt4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt1.png">
+                                                <img src="./assets/img/akt1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt2.png">
+                                                <img src="./assets/img/akt2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt3.png">
+                                                <img src="./assets/img/akt3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/akt4.png">
+                                                <img src="./assets/img/akt4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container event" style="display:none;">
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event1.png">
+                                                <img src="./assets/img/event1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event2.png">
+                                                <img src="./assets/img/event2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event3.png">
+                                                <img src="./assets/img/event3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event4.png">
+                                                <img src="./assets/img/event4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event1.png">
+                                                <img src="./assets/img/event1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event2.png">
+                                                <img src="./assets/img/event2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event3.png">
+                                                <img src="./assets/img/event3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event4.png">
+                                                <img src="./assets/img/event4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event1.png">
+                                                <img src="./assets/img/event1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event2.png">
+                                                <img src="./assets/img/event2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event3.png">
+                                                <img src="./assets/img/event3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event4.png">
+                                                <img src="./assets/img/event4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event1.png">
+                                                <img src="./assets/img/event1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event2.png">
+                                                <img src="./assets/img/event2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event3.png">
+                                                <img src="./assets/img/event3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/event4.png">
+                                                <img src="./assets/img/event4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container rakernas" style="display:none;">
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas1.png">
+                                                <img src="./assets/img/rakernas1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas2.png">
+                                                <img src="./assets/img/rakernas2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas3.png">
+                                                <img src="./assets/img/rakernas3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas4.png">
+                                                <img src="./assets/img/rakernas4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas1.png">
+                                                <img src="./assets/img/rakernas1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas2.png">
+                                                <img src="./assets/img/rakernas2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas3.png">
+                                                <img src="./assets/img/rakernas3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas4.png">
+                                                <img src="./assets/img/rakernas4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas1.png">
+                                                <img src="./assets/img/rakernas1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas2.png">
+                                                <img src="./assets/img/rakernas2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas3.png">
+                                                <img src="./assets/img/rakernas3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas4.png">
+                                                <img src="./assets/img/rakernas4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas1.png">
+                                                <img src="./assets/img/rakernas1.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas2.png">
+                                                <img src="./assets/img/rakernas2.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame1.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas3.png">
+                                                <img src="./assets/img/rakernas3.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 p-20 thumbnail-popup"
+                                            style="height:100%;position: relative;background: url('./assets/img/frame2.svg');background-repeat: no-repeat;background-position: center center;background-size: contain;">
+                                            <a href="./assets/img/rakernas4.png">
+                                                <img src="./assets/img/rakernas4.png" width="100%" height="100%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="produk-item-7 con-outing">
+                                <p style="font-size: 14pt;" class="font-weight-boldest text-center mb-0 p-10 t-blue t-outing">
+                                    OUTING</p>
+                            </a>
+                    
+                            <a class="produk-item-8 con-event">
+                                <p style="font-size: 14pt;" class="font-weight-boldest text-center mb-0 p-10 t-blue t-event">
+                                    EVENT
+                                </p>
+                            </a>
+                            <a class="produk-item-9 con-rakernas">
+                                <p style="font-size: 14pt;" class="font-weight-boldest text-center mb-0 p-10 t-blue t-rakernas">RAKERNAS 2020</p>
+                            </a>
+                    
+                        </div>
+                    </section>
+                    
+                    <img src="assets/img/hr1.svg" width="100%" />
+                    <section id="info">
+                        <div class="bg-white pt-30 pb-20" style="position:relative;width: 100%;overflow: hidden;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p class="text-center">Perusahaan Anak</p>
+                                                        <div class="text-center">
+                                                            <img src="assets/img/bri.svg" width="60%" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p class="text-center">Terdaftar dan diawasi oleh</p>
+                                                        <div class="text-center">
+                                                            <img src="assets/img/ojk.svg" width="60%" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-20">
+                                                    <div class="col-md-6">
+                                                        <p class="text-center">Anggota</p>
+                                                        <div class="text-center">
+                                                            <img src="assets/img/appi.svg" width="60%" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p class="text-center">Anggota</p>
+                                                        <div class="text-center">
+                                                            <img src="assets/img/rapindo.svg" width="60%" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h4>Tautan</h4>
+                                                <ul>
+                                                    <li>Bank BRI</li>
+                                                    <li>Produk & Layanan</li>
+                                                    <li>Whistleblowing System</li>
+                                                    <li>Simulasi Pembiayaan</li>
+                                                    <li>Karier</li>
+                                                </ul>
+
+                                                <h4 class="mt-20">Hubungi Kami</h4>
+                                                <p>(021) 5745444</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="position:absolute;bottom:0px;z-index:9;">
+                               <img  src="assets/img/bottom-ornamen.svg" width="100%" />
+                            </div>
+                            <div class="ornamen-bottom2" style="z-index:9;">
+                                <h4 class="text-white text-right mb-5">PT BRI MULTIFINANCE<br>
+                                    INDONESIA</h4>
+                                    <p class="text-white text-right">Lippo Kuningan, Lt 11 dan GF,<br>
+                                    Jl. H.R. Rasuna Said Kav. B-12<br>
+                                    Karet, Kuningan<br>
+                                    Jakarta Selatan 12920, Indonesia<br><br>
+                                Phone (021) 5745333 (hunting)<br>
+                                Fax (021) 5745444</p>
+                            </div>
+                            <img style="position:absolute;top:100px;right:0;z-index:9;" src="assets/img/ornamen-info.svg" width="300" />
+
+                        </div>
+                        <div class="cp" style="z-index:9;">
+                            <p class="text-center mb-0 p-5 text-white">Copyright 2021, PT. BRI Multifinance Indonesia. All Right Reserved.</p>
+                        </div>
+                        
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        localStorage.setItem('open', 'false');
+        localStorage.setItem('aktif', '1');
+
+        $('.thumbnail-popup').lightGallery({
+            thumbnail: true
+        });
+
+        checkAktif();
+
+        $('.preloader').fadeOut();
+        $('.side-custom').fadeOut(1);
+        $('#kt_demo_panel_toggle').click(function(){
+            if(localStorage.getItem('open') == 'false'){
+                localStorage.setItem('open', 'true');
+                $('.side-custom').fadeIn();
+            }else{
+                localStorage.setItem('open', 'false');
+                $('.side-custom').fadeOut();
+            }
+        })
+
+        $('.con-outing').click(function(){
+            localStorage.setItem('aktif', '1');
+            checkAktif();
+        })
+
+        $('.con-event').click(function () {
+            localStorage.setItem('aktif', '2');
+            checkAktif();
+        })
+
+         $('.con-rakernas').click(function () {
+            localStorage.setItem('aktif', '3');
+            checkAktif();
+        })
+
+
+        function checkAktif(){
+            if(localStorage.getItem('aktif') == '1'){
+                $('.t-outing').addClass('text-white');
+                $('.t-event').removeClass('text-white');
+                $('.t-rakernas').removeClass('text-white');
+                $('.outing').fadeIn(1);
+                $('.event').fadeOut(1);
+                $('.rakernas').fadeOut(1);
+            }else if (localStorage.getItem('aktif') == '2') {
+                $('.t-event').addClass('text-white');
+                $('.t-rakernas').removeClass('text-white');
+                $('.t-outing').removeClass('text-white');
+                $('.outing').fadeOut(1);
+                $('.event').fadeIn(1);
+                $('.rakernas').fadeOut(1);
+            }else{
+                $('.t-rakernas').addClass('text-white');
+                $('.t-outing').removeClass('text-white');
+                $('.t-event').removeClass('text-white');
+                $('.outing').fadeOut(1);
+                $('.event').fadeOut(1);
+                $('.rakernas').fadeIn(1);
+            }
+        }
+
+        var swiper6 = new Swiper(".mySwiper6", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            // freeMode: true,
+            pagination: {
+                el: ".swiper-pagination6",
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next6",
+                prevEl: ".swiper-button-prev6",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                }
+            }
+        });
+
+        var swiper7 = new Swiper(".mySwiper7", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            // freeMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next7",
+                prevEl: ".swiper-button-prev7",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        });
+
+        var swiper8 = new Swiper(".mySwiper8", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            // freeMode: true,
+            pagination: {
+                el: ".swiper-pagination8",
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next8",
+                prevEl: ".swiper-button-prev8",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 40
+                }
+            }
+        });
+    });
+</script>
+
+</html>
